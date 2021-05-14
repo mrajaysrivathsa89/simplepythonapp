@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 22e06cfbbff3e88f492252d34e9e633ab7ef1f91
 pipeline {
 //None parameter in the agent section means that no global agent will be allocated for the entire Pipeline’s
 //execution and that each stage directive must specify its own agent section.
@@ -22,6 +25,7 @@ pipeline {
                 stash(name: 'compiled-results', includes: 'sources/*.py*')
             }
         }
+<<<<<<< HEAD
         stage('Test') {
             agent {
                 docker {
@@ -51,3 +55,7 @@ pipeline {
     }
 
 }
+=======
+       }
+       }
+>>>>>>> 22e06cfbbff3e88f492252d34e9e633ab7ef1f91
